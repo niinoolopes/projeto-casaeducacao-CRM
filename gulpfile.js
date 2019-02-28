@@ -169,7 +169,7 @@ gulp.task('resetFolders', shell.task(
 ));
 
 gulp.task('D-styles-min', () => {
-    gulp.src(`${root.dev}/${css.path}/${css.src}/init.scss`)
+    gulp.src(`${root.dev}/${css.path}/*.*`)
         .pipe(concat(`${css.name_min}`))
         .pipe(sass({ outputStyle: 'compressed' }))
         .pipe(autoprefixer({ browsers: ['last 2 versions'], cascade: false }))
@@ -177,7 +177,7 @@ gulp.task('D-styles-min', () => {
 });
 
 gulp.task('D-scripts-min', () => {
-    gulp.src(`${root.dev}/${javascript.path}/${javascript.src}/${javascript.allFile}`)
+    gulp.src(`${root.dev}/${javascript.path}/*.*`)
         .pipe(concat(`${javascript.name_min}`))
         .pipe(babel({ presets: ['env'] }))
         .pipe(uglify())
