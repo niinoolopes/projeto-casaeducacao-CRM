@@ -1,0 +1,12 @@
+.page-icon{
+  width: 14px;
+  max-width: 100%;
+  font-size: 12px;
+  display: block;
+  text-align: center;
+} 
+@media (min-width: 768px) { 
+  .page-icon{
+    margin: 0 6px;
+  }
+}

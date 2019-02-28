@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/bootstrap-min.css">
+  <link rel="stylesheet" href="styles/estilo.css">
+</head>
+
+<body>
+  <header>
+
+  </header>
+  <main class="d-flex">
+
+    <aside class="asideMain">
+      <!-- PERFIL -->
+      <div class="d-flex align-items-center px-2 header-height asideMain-perfil">
+        <img class="d-block p-1" src="assets/images/avatar-01.png" alt="Fulano">
+        <h3 class="m-0 px-2">Anderson L.</h3> 
+      </div>
+
+      <!-- MENU -->
+      <nav class="aside-menu">
+        <ul class="m-0 p-0">
+          <li>
+            <a class="d-flex align-items-center p-1" href="#">
+              <i class="fas fa-home page-icon"></i>
+              <span class="d-inline-block px-1">Inicio</span>
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-items-center p-1" href="#">
+              <i class="fas fa-database page-icon"></i>
+              <span class="d-inline-block px-1">Listas</span>
+              <i class="fas fa-caret-down"></i>
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-items-center p-1" href="#">
+              <!-- <i class="fas fa-home page-icon"></i> -->
+              <i class="far fa-address-book page-icon"></i>
+              <span class="d-inline-block px-1">Consultores</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <section class="d-inline-block sectionMain">
+      <!-- HEADER -->
+      <header class="d-flex justify-content-between px-1 header-main">
+        <!-- LEFT -->
+        <div class="d-flex align-items-center">
+          <div class="header-item">
+              <img class="d-inline-block m-1 page-icon" src="assets/icons/bars-solid.svg"> 
+          </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="d-flex align-items-center">
+
+          <div class="header-item">
+            <img class="d-inline-block m-1 page-icon" src="assets/icons/exclamation-circle-solid.svg"> 
+          </div>
+          <div class="notificacao ativo header-item">
+            <img class="d-inline-block m-1 page-icon" src="assets/icons/calendar-alt-regular.svg"> 
+            <!-- <i class="far fa-calendar-alt "></i> -->
+          </div>
+        </div>
+
+      </header>
+      
+      <!-- CARDS -->
+      <section class="my-3 row m-0 cards">
+        <article class="col-sm-3">
+          <div class="card-item d-flex align-items-center justify-content-around mb-3">
+            <div class="card-icon  d-flex align-items-center justify-content-center">
+              <img src="assets/icons/clipboard-list-solid.svg" alt="Lista de Leads" class="page-icon">
+            </div>
+            <div class="col">
+              <h3 class="card-tipo m-0 display-4">Prospect</h3>
+              <p class="card-quantidade m-0 display-4">215</p>
+            </div>
+          </div>
+        </article>
+        <article class="col-sm-3">
+          <div class="card-item d-flex align-items-center justify-content-around mb-3">
+            <div class="card-icon  d-flex align-items-center justify-content-center">
+              <img src="assets/icons/clipboard-regular.svg" alt="" class="page-icon">
+            </div>
+            <div class="col">
+              <h3 class="card-tipo m-0 display-4">Prospect</h3>
+              <p class="card-quantidade m-0 display-4">215</p>
+            </div>
+          </div>
+        </article>
+        <article class="col-sm-3">
+          <div class="card-item d-flex align-items-center justify-content-around mb-3">
+            <div class="card-icon  d-flex align-items-center justify-content-center">
+              <img src="assets/icons/clipboard-check-solid.svg" alt="" class="page-icon">
+            </div>
+            <div class="col">
+              <h3 class="card-tipo m-0 display-4">Prospect</h3>
+              <p class="card-quantidade m-0 display-4">215</p>
+            </div>
+          </div>
+        </article>
+        <article class="col-sm-3">
+          <div class="card-item d-flex align-items-center justify-content-around mb-3">
+            <div class="card-icon  d-flex align-items-center justify-content-center">
+              <img src="assets/icons/address-book-regular.svg" alt="" class="page-icon">
+            </div>
+            <div class="col">
+              <h3 class="card-tipo m-0 display-4">Ex-Alunos</h3>
+              <p class="card-quantidade m-0 display-4">215</p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </section>
+  </main>
+  <script src="scripts/main-min.js"></script>
+</body>
+
+</html>

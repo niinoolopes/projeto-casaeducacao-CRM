@@ -1,0 +1,16 @@
+// config
+@import 'config/variaveis';
+
+
+// COMUNS
+@import 'page/common/header';
+@import 'page/common/footer';
+
+// HOME - aside main
+@import 'page/home/asideMain/_menu';
+@import 'page/home/asideMain/asideMain';
+// HOME - section main
+@import 'page/home/sectionMain/sectionMain';
+@import 'page/home/sectionMain/cards';
+
+@import 'page/page';
