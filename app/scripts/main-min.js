@@ -1,1 +1,1 @@
-"use strict";
+"use strict";var btn=document.querySelector("#tbn-menu");btn.addEventListener("click",function(){document.querySelector(".asideMain").classList.toggle("ativo")});
