@@ -17,34 +17,41 @@
   </header>
   <main class="d-flex">
 
-    <aside class="asideMain">
+    <aside class="asideMain ">
       <!-- PERFIL -->
-      <div class="d-flex align-items-center px-2 header-height asideMain-perfil">
-        <img class="d-block p-1" src="assets/images/avatar-01.png" alt="Fulano">
-        <h3 class="m-0 px-2">Anderson L.</h3> 
+      <div class="d-flex align-items-center px-1 asideMain-perfil">
+        <div class="page-icon">
+          <img class="page-icon-img perfil" src="assets/images/avatar-01.png" alt="Fulano">
+        </div>
+        <h3 class="d-inline-block m-0 px-1 js-texto">Anderson L.</h3> 
       </div>
 
       <!-- MENU -->
-      <nav class="aside-menu">
+      <nav class="aside-menu px-1 ">
         <ul class="m-0 p-0">
           <li>
-            <a class="d-flex align-items-center p-1" href="#">
-              <i class="fas fa-home page-icon"></i>
-              <span class="d-inline-block px-1">Inicio</span>
+            <a class="d-flex align-items-center py-1" href="#">
+              <div class="page-icon">
+                <img class="page-icon-img menu" src="assets/icons/home-solid-branco.png">
+              </div>
+              <span class="d-inline-block px-1 js-texto">Inicio</span>
             </a>
           </li>
           <li>
-            <a class="d-flex align-items-center p-1" href="#">
-              <i class="fas fa-database page-icon"></i>
-              <span class="d-inline-block px-1">Listas</span>
-              <i class="fas fa-caret-down"></i>
+            <a class="d-flex align-items-center py-1" href="#">
+              <div class="page-icon">
+                <img class="page-icon-img menu" src="assets/icons/database-solid-branco.png">
+              </div>
+              
+              <span class="d-inline-block px-1 js-texto">Listas <i class="fas fa-caret-down"></i></span>
             </a>
           </li>
           <li>
-            <a class="d-flex align-items-center p-1" href="#">
-              <!-- <i class="fas fa-home page-icon"></i> -->
-              <i class="far fa-address-book page-icon"></i>
-              <span class="d-inline-block px-1">Consultores</span>
+            <a class="d-flex align-items-center py-1" href="#">
+              <div class="page-icon">
+                  <img class="page-icon-img menu" src="assets/icons/users-solid-branco.png">
+              </div>
+              <span class="d-inline-block px-1 js-texto">Consultores</span>
             </a>
           </li>
         </ul>
@@ -56,20 +63,19 @@
       <header class="d-flex justify-content-between px-1 header-main">
         <!-- LEFT -->
         <div class="d-flex align-items-center">
-          <div class="header-item">
-              <img class="d-inline-block m-1 page-icon" src="assets/icons/bars-solid.svg"> 
+          <div class="p-2 header-item" id="tbn-menu">
+              <img class="d-block m-1 page-icon" src="assets/icons/bars-solid.svg"> 
           </div>
         </div>
 
         <!-- RIGHT -->
         <div class="d-flex align-items-center">
 
-          <div class="header-item">
-            <img class="d-inline-block m-1 page-icon" src="assets/icons/exclamation-circle-solid.svg"> 
+          <div class="mx-1 p-2 header-item">
+            <img class="d-block  page-icon" src="assets/icons/exclamation-circle-solid.svg"> 
           </div>
-          <div class="notificacao ativo header-item">
-            <img class="d-inline-block m-1 page-icon" src="assets/icons/calendar-alt-regular.svg"> 
-            <!-- <i class="far fa-calendar-alt "></i> -->
+          <div class="mx-1 p-2 header-item notificacao ativo ">
+            <img class="d-block  page-icon" src="assets/icons/calendar-alt-regular.svg"> 
           </div>
         </div>
 
