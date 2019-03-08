@@ -1,0 +1,19 @@
+// config
+@import 'config/variaveis';
+
+//MIXINS
+@import 'mixin/components';
+
+// COMUNS
+@import 'page/common/header';
+@import 'page/common/footer';
+@import 'page/common/aside-menu';
+@import 'page/common/aside-navegacao';
+
+
+// HOME
+@import 'page/page';
+
+@import 'page/home-main';
+@import 'page/home-cards';
+

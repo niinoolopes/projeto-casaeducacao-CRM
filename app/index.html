@@ -12,125 +12,183 @@
 </head>
 
 <body>
-  <header>
+
+  <header class="header__topo py-2 d-flex align-content-center justify-content-between">
+
+    <a href="index.html" class="header__logo">
+      <img src="assets/images/logo.png" alt="Logo CRM" class="header__logo-img d-block m-auto">
+    </a>
+
+    <div class="d-flex align-items-center mr-3">
+      <a class="header__icone mx-2 notificacao" href="#">
+        <img class="d-block header__icone-icone" src="assets/icons/exclamation-circle-solid.svg">
+      </a>
+      <a class="header__icone mx-2 agenda" href="#">
+        <img class="d-block header__icone-icone" src="assets/icons/calendar-alt-regular.svg">
+      </a>
+    </div>
 
   </header>
-  <main class="d-flex">
 
-    <aside class="asideMain ">
-      <!-- PERFIL -->
-      <div class="d-flex align-items-center px-1 asideMain-perfil">
-        <div class="page-icon">
-          <img class="page-icon-img perfil" src="assets/images/avatar-01.png" alt="Fulano">
-        </div>
-        <h3 class="d-inline-block m-0 px-1 js-texto">Anderson L.</h3> 
-      </div>
 
+  <main class="page__main row m-0">
+
+    <aside class="aside__menu ">
       <!-- MENU -->
-      <nav class="aside-menu px-1 ">
-        <ul class="m-0 p-0">
-          <li>
-            <a class="d-flex align-items-center py-1" href="#">
-              <div class="page-icon">
-                <img class="page-icon-img menu" src="assets/icons/home-solid-branco.png">
+      <nav class="py-2 px-1">
+        <ul class="p-0 m-0">
+          <li class="spy-2">
+            <a class="aside__link px-1 py-2 d-flex align-content-center" href="index.html">
+              <div class="aside__link-icone mx-1">
+                <img src="assets/icons/home-solid-branco.png" alt="">
               </div>
-              <span class="d-inline-block px-1 js-texto">Inicio</span>
+              <span class="aside__link-texto">Início</span>
             </a>
           </li>
-          <li>
-            <a class="d-flex align-items-center py-1" href="#">
-              <div class="page-icon">
-                <img class="page-icon-img menu" src="assets/icons/database-solid-branco.png">
+          <li class="spy-2">
+            <a class="aside__link px-1 py-2 d-flex align-content-center" data-toggle="collapse" href="#collapseExample"
+              role="button" aria-expanded="false" aria-controls="collapseExample">
+              <div class="aside__link-icone mx-1">
+                <img src="assets/icons/database-solid-branco.png" alt="">
               </div>
-              
-              <span class="d-inline-block px-1 js-texto">Listas <i class="fas fa-caret-down"></i></span>
+              <span class="aside__link-texto">Bases</span>
+            </a>
+            <ul class="collapse" id="collapseExample">
+              <li class="py-2"><a href="lista.html">Rede de Lideres</a></li>
+              <li class="py-2"><a href="lista.html">Inteligências Fluida</a></li>
+              <li class="py-2"><a href="lista.html">Novos Cursos</a></li>
+              <li class="py-2"><a href="lista.html">Base Probramas</a></li>
+              <li class="py-2"><a href="bases.html">Todas</a></li>
+            </ul>
+
+          </li>
+          <li class="spy-2">
+            <a class="aside__link px-1 py-2 d-flex align-content-center" href="#">
+              <div class="aside__link-icone mx-1">
+                <img src="assets/icons/users-solid-branco.png" alt="">
+              </div>
+              <span class="aside__link-texto">Consultores</span>
             </a>
           </li>
-          <li>
-            <a class="d-flex align-items-center py-1" href="#">
-              <div class="page-icon">
-                  <img class="page-icon-img menu" src="assets/icons/users-solid-branco.png">
+          <li class="spy-2">
+            <a class="aside__link px-1 py-2 d-flex align-content-center" href="#">
+              <div class="aside__link-icone mx-1">
+                <img src="assets/icons/database-solid-branco.png" alt="">
               </div>
-              <span class="d-inline-block px-1 js-texto">Consultores</span>
+              <span class="aside__link-texto">menu</span>
+            </a>
+          </li>
+          <li class="spy-2">
+            <a class="aside__link px-1 py-2 d-flex align-content-center" href="#">
+              <div class="aside__link-icone mx-1">
+                <img src="assets/icons/database-solid-branco.png" alt="">
+              </div>
+              <span class="aside__link-texto">menu</span>
             </a>
           </li>
         </ul>
       </nav>
     </aside>
 
-    <section class="d-inline-block sectionMain">
-      <!-- HEADER -->
-      <header class="d-flex justify-content-between px-1 header-main">
-        <!-- LEFT -->
-        <div class="d-flex align-items-center">
-          <div class="p-2 header-item" id="tbn-menu">
-              <img class="d-block m-1 page-icon" src="assets/icons/bars-solid.svg"> 
-          </div>
-        </div>
+    <section class="main__page ">
 
-        <!-- RIGHT -->
-        <div class="d-flex align-items-center">
+      <div class="px-3 pb-3">
+        <h2 class="display-4">Home</h2>
+        <nav aria-label="breadcrumb p-0">
+          <ol class="breadcrumb p-1 px-2 m-0">
+            <li class="breadcrumb-item active" aria-current="page">Home</li>
+            <!-- <li class="breadcrumb-item"><a href="#">Listas</a></li> -->
+            <!-- <li class="breadcrumb-item active" aria-current="page">Data</li> -->
+          </ol>
+        </nav>
+      </div>
 
-          <div class="mx-1 p-2 header-item">
-            <img class="d-block  page-icon" src="assets/icons/exclamation-circle-solid.svg"> 
-          </div>
-          <div class="mx-1 p-2 header-item notificacao ativo ">
-            <img class="d-block  page-icon" src="assets/icons/calendar-alt-regular.svg"> 
-          </div>
-        </div>
-
-      </header>
-      
       <!-- CARDS -->
-      <section class="my-3 row m-0 cards">
+      <section class="my-3 card__section row m-0">
+
         <article class="col-sm-3">
-          <div class="card-item d-flex align-items-center justify-content-around mb-3">
-            <div class="card-icon  d-flex align-items-center justify-content-center">
-              <img src="assets/icons/clipboard-list-solid.svg" alt="Lista de Leads" class="page-icon">
+          <a href="#">
+            <div class="card__item mb-3">
+              <div class="row m-0 py-2">
+                <div class="card__icone d-flex">
+                  <img src="assets/icons/clipboard-list-solid.svg" alt="Lista de Leads" class="card__icone-img d-block">
+                </div>
+                <div class="card__text">
+                  <h3 class="card__tipo m-0">Leads</h3>
+                  <p class="card__quantidade m-0">215</p>
+                </div>
+              </div>
             </div>
-            <div class="col">
-              <h3 class="card-tipo m-0 display-4">Prospect</h3>
-              <p class="card-quantidade m-0 display-4">215</p>
-            </div>
-          </div>
+          </a>
         </article>
+
         <article class="col-sm-3">
-          <div class="card-item d-flex align-items-center justify-content-around mb-3">
-            <div class="card-icon  d-flex align-items-center justify-content-center">
-              <img src="assets/icons/clipboard-regular.svg" alt="" class="page-icon">
+          <a href="#">
+            <div class="card__item mb-3">
+              <div class="row m-0 py-2">
+                <div class="card__icone d-flex">
+                  <img src="assets/icons/clipboard-regular.svg" alt="Lista de Leads" class="card__icone-img d-block">
+                </div>
+                <div class="card__text">
+                  <h3 class="card__tipo m-0">Prospect</h3>
+                  <p class="card__quantidade m-0">215</p>
+                </div>
+              </div>
             </div>
-            <div class="col">
-              <h3 class="card-tipo m-0 display-4">Prospect</h3>
-              <p class="card-quantidade m-0 display-4">215</p>
-            </div>
-          </div>
+          </a>
         </article>
+
         <article class="col-sm-3">
-          <div class="card-item d-flex align-items-center justify-content-around mb-3">
-            <div class="card-icon  d-flex align-items-center justify-content-center">
-              <img src="assets/icons/clipboard-check-solid.svg" alt="" class="page-icon">
+          <a href="#">
+            <div class="card__item mb-3">
+              <div class="row m-0 py-2">
+                <div class="card__icone d-flex">
+                  <img src="assets/icons/clipboard-check-solid.svg" alt="Lista de Leads"
+                    class="card__icone-img d-block">
+                </div>
+                <div class="card__text">
+                  <h3 class="card__tipo m-0">Prospect</h3>
+                  <p class="card__quantidade m-0">215</p>
+                </div>
+              </div>
             </div>
-            <div class="col">
-              <h3 class="card-tipo m-0 display-4">Prospect</h3>
-              <p class="card-quantidade m-0 display-4">215</p>
-            </div>
-          </div>
+          </a>
         </article>
+
         <article class="col-sm-3">
-          <div class="card-item d-flex align-items-center justify-content-around mb-3">
-            <div class="card-icon  d-flex align-items-center justify-content-center">
-              <img src="assets/icons/address-book-regular.svg" alt="" class="page-icon">
+          <a href="#">
+            <div class="card__item mb-3">
+              <div class="row m-0 py-2">
+                <div class="card__icone d-flex">
+                  <img src="assets/icons/address-book-regular.svg" alt="Lista de Leads" class="card__icone-img d-block">
+                </div>
+                <div class="card__text">
+                  <h3 class="card__tipo m-0">Ex-Aluno</h3>
+                  <p class="card__quantidade m-0">215</p>
+                </div>
+              </div>
             </div>
-            <div class="col">
-              <h3 class="card-tipo m-0 display-4">Ex-Alunos</h3>
-              <p class="card-quantidade m-0 display-4">215</p>
-            </div>
-          </div>
+          </a>
         </article>
+
       </section>
+
+
     </section>
+
   </main>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
   <script src="scripts/main-min.js"></script>
+
 </body>
 
 </html>

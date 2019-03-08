@@ -1,0 +1,27 @@
+@mixin titulo(){
+  
+}
+@mixin sub_titulo(){
+  
+}
+@mixin box_shadow(){
+  transition: .3s;
+  opacity: .75;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+@mixin box_shadow_hover(){
+  opacity: 1;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.3), 
+  inset 0 0 2px 0px rgba(50, 50, 50, .2);
+}
+
+@mixin box_shadow2(){
+  transition: .3s;
+  opacity: .75;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+}
+@mixin box_shadow_hover2(){
+  opacity: 1;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+}
+
