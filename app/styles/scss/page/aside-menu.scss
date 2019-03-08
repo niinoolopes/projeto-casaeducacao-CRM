@@ -1,0 +1,59 @@
+@mixin back_hover(){
+  background: linear-gradient(90deg,transparent 0%,rgba(255, 255, 255, .25) 40%);
+}
+
+.aside__menu{
+  background: #505050;
+  height: calc(100vh - 76px);
+  
+}
+@media (min-width: 768px) {
+  .aside__menu{
+    width: 185px;
+  }
+}
+.aside__menu--fixed{
+  position: fixed;
+  top: 0;
+  width: 300px;
+}
+
+.aside__link{
+  color: #eee
+}
+
+.aside__link:hover{
+  text-decoration: none;
+  @include back_hover();
+}
+
+.aside__link-icone{
+  width: 20px;
+  height: 20px;
+}
+
+.aside__link-icone img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.aside__link-texto{
+  color: #fff;
+}
+
+// SUBMENU
+.aside__menu ul li ul {
+  list-style-type: none;
+  padding: 0 0 0 30px;
+  background: rgba(255,255,255,.15)
+}
+
+.aside__menu ul li ul li a{
+  color: #fff;
+}
+.aside__menu ul li ul li:hover{
+  @include back_hover();
+}
+.aside__menu ul li ul li a:hover{
+  text-decoration: none;
+}

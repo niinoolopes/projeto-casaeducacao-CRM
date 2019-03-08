@@ -47,9 +47,10 @@ const javascript = {
 gulp.task('serve', function () {
     browserSync.init({
         server: {
-            baseDir: root.dev,
+            baseDir: `./${root.dev}`,
         }
     });
+    console.log(`Server OK`)
 });
 
 
@@ -96,7 +97,7 @@ gulp.task('styles-min', () => {
     console.log(`${css.name} OK`)
 });
 
-gulp.task('styles', ['bootstrap-css'], () => {
+gulp.task('styles', () => {
     gulp.src(`${root.dev}/${css.path}/${css.src}/init.scss`)
         .pipe(concat(`${css.name}`))
         .pipe(sass())
@@ -113,7 +114,7 @@ gulp.task('scripts-min', () => {
     console.log(`${javascript.name} OK`)
 });
 
-gulp.task('scripts', ['bootstrap-js'], () => {
+gulp.task('scripts', () => {
     gulp.src(`${root.dev}/${javascript.path}/${javascript.src}/${javascript.allFile}`)
         .pipe(concat(`${javascript.name}`))
         .pipe(gulp.dest(`${root.dev}/${javascript.path}`))
@@ -131,21 +132,21 @@ gulp.task('watch', () => {
 
 gulp.task('default', () => {
     // gulp.start( 'serve', 'styles', 'styles-min', 'scripts', 'scripts-min', 'watch' );
-    gulp.start('styles', 'styles-min', 'scripts', 'scripts-min', 'watch');
+    gulp.start('styles', 'styles-min', 'bootstrap-css', 'scripts', 'scripts-min', 'bootstrap-js', 'watch');
 })
 
 
 // DEPENDENCIA
 
 gulp.task('bootstrap-css', () => {
-    gulp.src(`node_modules/bootstrap/dist/css/bootstrap.css`)
+    gulp.src(`${root.dev}/${files.path}/bootstrap/scss/bootstrap.scss`)
         .pipe(concat(`bootstrap-min.css`))
         .pipe(sass({ outputStyle: 'compressed' }))
         .pipe(gulp.dest(`${root.dev}/${css.path}`))
     console.log(`bootstrap-min.css OK`);
 });
 gulp.task('bootstrap-js', () => {
-    gulp.src(`node_modules/bootstrap/dist/js/bootstrap.js`)
+    gulp.src(`${root.dev}/${files.path}/bootstrap/js/dist/**/*.js`)
         .pipe(concat(`bootstrap-min.js`))
         .pipe(babel({ presets: ['env'] }))
         .pipe(uglify())
