@@ -1,0 +1,16 @@
+// config
+@import 'config/variaveis';
+
+//MIXINS
+@import 'mixin/components';
+
+// page
+@import 'page/header';
+// @import 'page/footer';
+@import 'page/aside-menu';
+
+// HOME
+@import 'page/page';
+
+// @import 'page/home-main';
+@import 'page/home-cards';

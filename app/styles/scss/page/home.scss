@@ -1,0 +1,17 @@
+.home .card{
+  box-shadow: 0 4px 10px 0px rgba(0,0,0,.2);
+  transition: .3s;
+}
+.home .card:hover{
+  box-shadow: 0 4px 10px 1px rgba(0,0,0,.4);
+}
+.home .card__text{
+  font-size: 2.5rem;
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+.home .card__icone{
+  opacity: .15;
+  width: 100%;
+  max-width: 50px;
+}
