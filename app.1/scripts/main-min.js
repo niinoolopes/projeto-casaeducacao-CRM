@@ -1,1 +1,1 @@
-"use strict";var btn=document.querySelector("#tbn-menu");btn.addEventListener("click",function(){document.querySelector(".asideMain").classList.toggle("ativo")});
+"use strict";if(768<window.innerWidth){console.log("maior");var heightAside=document.querySelector(".aside__menu").offsetHeight;document.querySelector(".main__page").style.height=heightAside+"px"}

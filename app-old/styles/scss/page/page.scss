@@ -1,0 +1,30 @@
+.page-icon{
+  min-width: 30px;
+  margin: auto;
+  // width: 100%;
+  // max-width: 20px;
+  // max-height: 20px;
+  // display: block;
+
+  // font-size: 18px;
+  // text-align: center;
+} 
+.page-icon-img{
+  max-width: 24px;
+  max-height: 20px;
+  margin: auto;
+  display: block;
+}
+.page-icon-img.perfil{
+  max-width: 34px;
+  max-height: 30px;
+}
+@media (min-width: 768px) { 
+}
+
+
+
+// MENU ATIVO
+.asideMain.ativo .page-icon{
+  margin: 0 6px;
+}
