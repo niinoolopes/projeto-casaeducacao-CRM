@@ -40,22 +40,65 @@
   }
 }
 
+.main__breadcrumb{
+  padding: 15px 0;
+}
+
+.main__jumbotron > h1{
+  font-weight: 300;
+}
+
+
+
+
+// FILTRO
+.filtro{
+  border: 1px solid rgba(0,0,0,0.125);
+}
+
+.filtro__label{
+  width: 30px;
+}
+
+.filtro__tbn{
+  width: 30px;
+  padding: 18px 4px;
+  transition: .3s;
+}
+
+.filtro__tbn:hover{
+  opacity: .25;
+}
+
+.filtro__icone{
+  
+}
+
+.filtro__input{
+  text-align: right;
+  width: 170px;
+  border-color: transparent;
+}
+
 
 // NOTIFICACAO
 .notificacao{
 
 }
+
 .notificacao__item{
   cursor: pointer;
   display: inline-block;
 }
- .notificacao__img{
+
+.notificacao__img{
    width: 24px;
    display: block;
    border: none;
    border-radius: 50%;
    transition: .3s;
- }
+}
+
  .notificacao__img:hover{
   box-shadow: 0 0 15px 1px rgba(0,0,0,0.4);
 }
@@ -71,20 +114,35 @@
 .tabela__inner td{
   font-size: 12px;
   white-space: nowrap!important;
-  padding: 8px 0; 
+  padding: 4px 0; 
 }
+
 .tabela__inner .tabela__icone{
-  width: 30px;
-  height: 30px;
-  padding: 4px;
+  width: 20px;
+  height: 20px;
+  // padding: 2px;
   transition: .3s;
   display: block;
 }
+
 .tabela__inner .tabela__icone:hover{
-  opacity: .25;
+  opacity: .5;
 }
+
 .tabela__inner .tabela__icone img{
-  margin: 2px 0 0;
+  opacity: .75;
+}
+
+.tabela__icone-wrapper{
+  min-width: 10px;
+}
+
+.tabela__icone-wrapper > *{
+  // width: 20px;
+}
+
+.tabela__coluna-icones{
+  width: 1px;
 }
 
 // GENERICOS

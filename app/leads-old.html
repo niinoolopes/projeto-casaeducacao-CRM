@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/bootstrap-min.css">
+  <link rel="stylesheet" href="styles/estilo-min.css">
+</head>
+
+<body class="main__page">
+
+  <header id="header" class="main__header p-2 bg-secondary">
+    <div class="header__icone" data-menu="main__navegacao" >
+        <img src="assets/icons/bars-solid.svg" alt="">
+     </div> 
+    <a href="index.html">
+    <img class="header__logo" src="assets/images/logo.png" alt="">
+    </a>
+    <div class="header__icone c-pointer mr-1" data-menu="main__notificacao">
+      <img class="d-block w-100 h-100"src="assets/icons/exclamation-circle-solid.svg">
+    </div> 
+  </header>
+
+  <section class="main__notificacao">
+    <div class="w-100">oi</div>
+  </section>
+ 
+  <div class="main__navegacao bg-secondary">
+   
+    <div  class="navbar navbar-expand-lg p-0 w-100">
+      <nav class="w-100 navbarpricipal">
+        <a class="nav-link text-light text-capitalize d-flex align-items-center w-100 active" href="index.html">
+          <div class="main__icone p-1 mr-1"><img class="d-block w-100 h-100" src="assets/icons/home-solid.svg"></div>
+          home
+        </a>
+        <a class="nav-link text-light text-capitalize d-flex align-items-center w-100" href="leads.html">
+          <div class="main__icone p-1 mr-1"><img class="d-block w-100 h-100" src="assets/icons/clipboard-list-solid.svg">
+          </div> leads
+        </a>
+        <a class="nav-link text-light text-capitalize d-flex align-items-center w-100" href="#">
+          <div class="main__icone p-1 mr-1"><img class="d-block w-100 h-100" src="assets/icons/clipboard-regular.svg">
+          </div> prospect
+        </a>
+        <a class="nav-link text-light text-capitalize d-flex align-items-center w-100" href="#">
+          <div class="main__icone p-1 mr-1"><img class="d-block w-100 h-100"
+              src="assets/icons/clipboard-check-solid.svg"></div> alunos
+        </a>
+        <a class="nav-link text-light text-capitalize d-flex align-items-center w-100" href="#">
+          <div class="main__icone p-1 mr-1"><img class="d-block w-100 h-100" src="assets/icons/address-book-regular.svg">
+          </div> ex-alunos
+        </a>
+        <a class="nav-link text-light text-capitalize d-flex align-items-center w-100" href="#">
+          <div class="main__icone p-1 mr-1"><img class="d-block w-100 h-100" src="assets/icons/calendar-alt-regular.svg">
+          </div> Agendamentos
+        </a>
+        <a class="nav-link text-light text-capitalize d-flex align-items-center w-100" href="#">
+          <div class="main__icone p-1 mr-1"><img class="d-block w-100 h-100"
+              src="assets/icons/exclamation-circle-solid.svg"></div> Notificações
+        </a>
+        <a class="nav-link text-light text-capitalize d-flex align-items-center w-100" href="#">
+          <div class="main__icone p-1 mr-1"><img class="d-block w-100 h-100" src="assets/icons/database-solid.svg"></div>
+          Programas
+        </a>
+        <a class="nav-link text-light text-capitalize d-flex align-items-center w-100" href="base.html">
+          <div class="main__icone p-1 mr-1"><img class="d-block w-100 h-100" src="assets/icons/database-solid.svg"></div>
+          Bases
+        </a>
+        <a class="nav-link text-light text-capitalize d-flex align-items-center w-100" href="#">
+          <div class="main__icone p-1 mr-1"><img class="d-block w-100 h-100" src="assets/icons/user-friends-solid.svg">
+          </div> Consultoras
+        </a>
+        <a class="nav-link text-light text-capitalize d-flex align-items-center w-100" href="#">
+          <div class="main__icone p-1 mr-1"><img class="d-block w-100 h-100" src="assets/icons/database-solid.svg"></div>
+          config
+        </a>
+      </nav>
+    </div>
+  </div>
+
+  <main id="conteudo" class="main__conteudo home bg-white">
+
+    <!-- BREADCRUMB -->
+    <section class="main__breadcrumb container-fluid mb-1 bg-light">
+      <div class="d-lg-flex justify-content-between align-items-center">
+
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb m-0 bg-light">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item text-dark active">Leads</li>
+            <!-- <li class="breadcrumb-item active" aria-current="page">Data</li> -->
+          </ol>
+        </nav>
+
+        <div class="notificacao d-flex pr-3">
+          <div class="notificacao__item mx-2">
+            <img class="notificacao__img" src="assets/icons/exclamation-circle-solid.svg">
+          </div>
+          <div class="notificacao__item mx-2">
+            <img class="notificacao__img" src="assets/icons/exclamation-circle-solid.svg">
+          </div>
+          <div class="notificacao__item mx-2">
+            <img class="notificacao__img" src="assets/icons/exclamation-circle-solid.svg">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- jumbotron -->
+    <section class="main__jumbotron jumbotron bg-light py-2 mx-3 mb-3">
+      <h1 class="disdplay-4 m-0">Leads</h1>
+      <!-- <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p> -->
+      <hr class="my-2">
+      <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
+      <!-- <p class="lead">
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </p> -->
+    </section>
+
+
+    <!-- CONTEUDO -->
+    <div class="container-fluid mb-3">
+      
+    </div>
+  
+  </main>
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="scripts/main-min.js"></script>
+
+</body>
+
+</html>
