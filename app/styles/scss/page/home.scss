@@ -1,9 +1,12 @@
-.home .card{
-  box-shadow: 0 4px 10px 0px rgba(0,0,0,.2);
+.home .card__link:hover{
+  text-decoration: none;
+}
+.home .card__hover{
+  box-shadow: 0 2px 20px 0px rgba(0,0,0,0.15);
   transition: .3s;
 }
-.home .card:hover{
-  box-shadow: 0 4px 10px 1px rgba(0,0,0,.4);
+.home .card__hover:hover{
+  box-shadow: 0 2px 15px 0px rgba(0,0,0,0.30);
 }
 .home .card__text{
   font-size: 2.5rem;
@@ -13,5 +16,5 @@
 .home .card__icone{
   opacity: .15;
   width: 100%;
-  max-width: 50px;
+  max-width: 35px;
 }
